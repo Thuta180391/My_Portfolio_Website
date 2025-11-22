@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8"/>
+        <title>BouncingBall</title>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+    </head>
+    <body>
+        <script>
+            //Ball variables
+            let x1;
+            let y1;
+            let x2;
+            let y2;
+            let x1Speed;
+            let y1Speed;
+            let x2Speed;
+            let y2Speed;
+            let r = 20;
+            let ballColor1;
+            let ballColor2;
+
+            function setup()
+            {
+                createCanvas(400, 400);
+                x1 = random(0, width);
+                y1 = random(0, height);
+                x1Speed = 2;
+                y1Speed = 2;
+                x2 = random(0, width - 100);
+                y2 = random(0, height - 100);
+                x2Speed = 2;
+                y2Speed = 2;
+                ballColor1 = color(0, 0, 255);
+                ballColor2 = color(255, 0, 0);
+            }
+
+            function draw()
+            {
+                background(220);
+                //move the ball
+                x1 = x1 + x1Speed
+                y1 = y1 + y1Speed
+                x2 = x2 + x2Speed
+                y2 = y2 + y2Speed
+
+                //check left or right edges
+                if(x1-r < 0 || x1+r > width)
+            {
+                x1Speed = -x1Speed;
+                ballColor1 = color(random(255), random(255), random(255));
+            }
+                if(y1-r < 0 || y1+r > height)
+            {
+                y1Speed = -y1Speed;
+                ballColor1 = color(random(255), random(255), random(255));
+            }
+                if(x2-r<0 || x2+r> width)
+            {   
+                x2Speed = -x2Speed;
+                ballColor2 = color(random(255), random(255), random(255));
+            }
+                if(y2-r<0 || y2+r> height)
+            {
+                y2Speed = -y2Speed;
+                ballColor2 = color(random(255), random(255), random(255));
+            }           
+                //draw robot
+                fill(ballColor1);
+		        ellipse(x1, y1-60,35);
+		        fill(255,0,0);
+		        rect(x1-13, y1-45, 26, 30);
+		        fill(0);
+		        rect(x1-13, y1-45, 10, 20);
+		        fill(0);
+		        rect(x1+3, y1-45, 10, 20);
+		        fill(0);
+		        rect(x1-13, y1-15, 10, 10);
+		        fill(0);
+		        rect(x1+3, y1-15, 10, 10);
+            
+                //draw ball
+                fill(ballColor2);
+                noStroke();
+                ellipse(x2, y2, r*2, r*2);
+                fill(0);
+                textSize(20);
+                textAlign(CENTER,CENTER);
+                text("$",x2,y2);
+            }   
+        </script>
+    </body>
+</html>

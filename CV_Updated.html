@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="LTR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
+</head>
+<body dir="ltr">
+<header class="grid-container">
+  <div class="grid-x grid-margin-x align-middle">
+    <div class="cell small-12 medium-3 text-center">
+      <img src="thuta.jpeg" alt="Photo of Thuta Zaw" style="max-width: 100%; border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+    </div>
+    <div class="cell small-12 medium-9">
+      <h1 data-i18n="name">Thuta Zaw Thuta Zaw</h1>
+      <p data-i18n="job-title">Senior Performance & Planning Manager</p>
+    </div>
+  </div>
+</header>
+
+<header>
+    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title" data-i18n="menu-title">Menu</div>
+    </div>
+    <div class="top-bar" id="main-menu">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li><a href="#about" data-i18n="menu-about">About</a></li>
+                <li><a href="#experience" data-i18n="menu-experience">Experience</a></li>
+                <li><a href="#education" data-i18n="menu-education">Education</a></li>
+                <li><a href="#skills" data-i18n="menu-skills">Skills</a></li>
+                <li><a href="#contact" data-i18n="menu-contact">Contact</a></li>            
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><button class ="button tiny" data-lang="en">EN</button></li>
+                <li><button class ="button tiny hollow" data-lang="de">DE</button></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="about">
+        <div class="callout large">
+            <div class="row column text-center">
+                <h1 class="primary" data-i18n="about-title">About Me</h1>
+                <p class="lead" data-i18n="about-text">Brief introduction about yourself.</p>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-6">
+                    <h2 class="Primary" data-i18n="experience-title">Experience</h2>
+                </div>
+                <div class ="cell medium-6">
+                    <h3 data-i18n="job1-title">Job Title 1</h3>
+                    <p data-i18n="job1-company">Company Name</p>
+                    <p data-i18n="job1-duration">Duration</p>
+                    <p data-i18n="job1-desc">Description of your role and achievements.</p>
+                </div>
+                <div class="cell medium-6">       
+                    <h3 data-i18n="job2-title">Job Title 2</h3>
+                    <p data-i18n="job2-company">Company Name</p>
+                    <p data-i18n="job2-duration">Duration</p>
+                    <p data-i18n="job2-desc">Brief Description of your role and achievements.</p>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section id="education">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-6">
+                    <h2 data-i18n="education-title">Education</h2>
+                </div>
+                <div class ="cell medium-6">
+                <p data-i18n="edu1-degree">Degree</p>
+                <p data-i18n="edu1-school">Institution</p>
+                <p data-i18n="edu1-year">Graduation Year</p>
+                </div>
+                <div class = "cell medium-6">
+                <p data-i18n="edu2-degree">Degree</p>
+                <p data-i18n="edu2-school">Institution</p>
+                <p data-i18n="edu2-year">Graduation Year</p>
+                </div>
+                <div class = "cell medium-6">
+                <p data-i18n="edu3-degree">Diploma</p>
+                <p data-i18n="edu2-school">Institution</p>
+                <p data-i18n="edu2-year">Graduation Year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-6">
+                    <h2 data-i18n="skills-title">Skills</h2>
+                </div>
+                <ul>
+                <li data-i18n="skill1">Skill 1</li>
+                <li data-i18n="skill2">Skill 2</li>
+                <li data-i18n="skill3">Skill 3</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+    <section id="contact">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-6 medium-offset-3">
+                    <h2 class="primary text-center" data-i18n="contact-title">Contact Information</h2>
+                    <p>
+                        <span data-i18n="contact-email-label">Email:</span>
+                        <a href="mailto:you@example.com">you@example.com</a>
+                    </p>
+                    <p>
+                        <span data-i18n="contact-phone-label">Phone:</span>
+                        <span data-i18n="contact-phone-value">Your Phone Number</span>
+                    </p>
+        
+                    <h3 data-i18n="contact-form-title">Contact Me</h3>
+                    <form>
+                        <label for="name">
+                            <span data-i18n="label-name">Name:</span>
+                            <input type="text" id="name" name="name" required>
+                        </label>
+                        <label for="email">
+                            <span data-i18n="label-email">Email:</span>
+                            <input type="email" id="email" name="email" required>
+                        </label>
+                        <label for="subject">Subject:
+                            <select id="subject" name="subject" required>
+                                <option value="general" data-i18n="subject-general">General Inquiry</option>
+                                <option value="job" data-i18n="subject-job">Job Opportunity</option>
+                                <option value="feedback" data-i18n="subject-feedback">Feedback</option>
+                                <option value="other" data-i18n="subject-other">Other</option>
+                            </select>
+                        </label>
+                        <label for="message">
+                            <span data-i18n="label-message">Message:</span>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </label>
+                        <button type="submit" data-i18n="button-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">
+            <a href="#top" data-i18n="back-to-top">Back to top</a>
+        </p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+    <script>
+  const translations = {
+    en: {
+      "name": "Thuta Zaw Thuta Zaw",
+      "job-title": "Senior Performance & Planning Manager",
+
+      "menu-title": "Menu",
+      "menu-about": "About",
+      "menu-experience": "Experience",
+      "menu-education": "Education",
+      "menu-skills": "Skills",
+      "menu-contact": "Contact",
+
+      "about-title": "About Me",
+      "about-text": "Brief introduction about yourself.",
+
+      "experience-title": "Experience",
+      "job1-title": "Job Title 1",
+      "job1-company": "Company Name",
+      "job1-duration": "Duration",
+      "job1-desc": "Description of your role and achievements.",
+      "job2-title": "Job Title 2",
+      "job2-company": "Company Name",
+      "job2-duration": "Duration",
+      "job2-desc": "Brief description of your role and achievements.",
+
+      "education-title": "Education",
+      "edu1-degree": "Degree",
+      "edu1-school": "Institution",
+      "edu1-year": "Graduation Year",
+      "edu2-degree": "Degree",
+      "edu2-school": "Institution",
+      "edu2-year": "Graduation Year",
+      "edu3-degree": "Diploma",
+      "edu3-school": "Institution",
+      "edu3-year": "Graduation Year",
+
+      "skills-title": "Skills",
+      "skill1": "Skill 1",
+      "skill2": "Skill 2",
+      "skill3": "Skill 3",
+
+      "contact-title": "Contact Information",
+      "contact-form-title": "Contact Me",
+      "contact-email-label": "Email:",
+      "contact-phone-label": "Phone:",
+      "contact-phone-value": "Your Phone Number",
+
+      "label-name": "Name:",
+      "label-email": "Email:",
+      "label-subject": "Subject:",
+      "label-message": "Message:",
+      "subject-general": "General Inquiry",
+      "subject-job": "Job Opportunity",
+      "subject-feedback": "Feedback",
+      "subject-other": "Other",
+      "button-submit": "Submit",
+      "back-to-top": "Back to top"
+    },
+
+    de: {
+      "name": "Thuta Zaw Thuta Zaw",
+      "job-title": "Senior Manager für Performance & Planung",
+
+      "menu-title": "Menü",
+      "menu-about": "Über mich",
+      "menu-experience": "Berufserfahrung",
+      "menu-education": "Ausbildung",
+      "menu-skills": "Fähigkeiten",
+      "menu-contact": "Kontakt",
+
+      "about-title": "Über mich",
+      "about-text": "Kurze Vorstellung von mir selbst.",
+
+      "experience-title": "Berufserfahrung",
+      "job1-title": "Positionsbezeichnung 1",
+      "job1-company": "Firmenname",
+      "job1-duration": "Zeitraum",
+      "job1-desc": "Beschreibung Ihrer Aufgaben und Erfolge.",
+      "job2-title": "Positionsbezeichnung 2",
+      "job2-company": "Firmenname",
+      "job2-duration": "Zeitraum",
+      "job2-desc": "Kurze Beschreibung Ihrer Aufgaben und Erfolge.",
+
+      "education-title": "Ausbildung",
+      "edu1-degree": "Abschluss",
+      "edu1-school": "Institut",
+      "edu1-year": "Abschlussjahr",
+      "edu2-degree": "Abschluss",
+      "edu2-school": "Institut",
+      "edu2-year": "Abschlussjahr",
+      "edu3-degree": "Diplom",
+      "edu3-school": "Institut",
+      "edu3-year": "Abschlussjahr",
+
+      "skills-title": "Fähigkeiten",
+      "skill1": "Fähigkeit 1",
+      "skill2": "Fähigkeit 2",
+      "skill3": "Fähigkeit 3",
+
+      "contact-title": "Kontaktinformationen",
+      "contact-form-title": "Kontaktformular",
+      "contact-email-label": "E-Mail:",
+      "contact-phone-label": "Telefon:",
+      "contact-phone-value": "Ihre Telefonnummer",
+
+      "label-name": "Name:",
+      "label-email": "E-Mail:",
+      "label-subject": "Betreff:",
+      "label-message": "Nachricht:",
+      "subject-general": "Allgemeine Anfrage",
+      "subject-job": "Stellenangebot",
+      "subject-feedback": "Feedback",
+      "subject-other": "Sonstiges",
+      "button-submit": "Senden",
+      "back-to-top": "Nach oben"
+    }
+  };
+
+  function setLanguage(lang) {
+    const elements = document.querySelectorAll("[data-i18n]");
+    elements.forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      const text = translations[lang][key];
+      if (text) {
+        el.textContent = text;
+      }
+    });
+
+    // highlight active button
+    document.querySelectorAll("[data-lang]").forEach(btn => {
+      if (btn.getAttribute("data-lang") === lang) {
+        btn.classList.remove("hollow");
+      } else {
+        btn.classList.add("hollow");
+      }
+    });
+
+    document.documentElement.setAttribute("lang", lang);
+  }
+
+  // default language
+  setLanguage("en");
+
+  // button listeners
+  document.querySelectorAll("[data-lang]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const lang = btn.getAttribute("data-lang");
+      setLanguage(lang);
+    });
+  });
+</script>
+</body>
+<!-- 🌍 Global Navigation -->
+<header>
+  <nav>
+    <ul style="display: flex; gap: 15px; list-style: none; justify-content: center; background-color: #f0f0f0; padding: 10px; margin: 0;">
+      <li><a href="Portfolio.html">Home</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="CV_Updated.html">CV</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+    </ul>
+  </nav>
+</header>
+</html>
